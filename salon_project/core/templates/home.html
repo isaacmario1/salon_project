@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="text-center">
+  <h1>Welcome to Murah Sparks' Salon</h1>
+  <p class="lead">Where beauty meets brilliance. Unisex salon for hair, nails, and makeup.</p>
+  <a href="{% url 'booking' %}" class="btn btn-primary">Book an Appointment</a>
+</div>
+<div class="row mt-5">
+  <div class="col-md-4 text-center">
+    <h4>Hair Styling</h4>
+    <p>Latest trends in braiding, trimming & coloring.</p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h4>Makeup</h4>
+    <p>Flawless makeup for every occasion.</p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h4>Nails</h4>
+    <p>Beautiful manicures and pedicures just for you.</p>
+  </div>
+</div>
+{% endblock %}

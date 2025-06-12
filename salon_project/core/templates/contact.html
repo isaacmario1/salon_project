@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h2>Contact Us</h2>
+<p><strong>Phone:</strong> +256-753528700</p>
+<p><strong>Email:</strong> murahsparks@gmail.com</p>
+<p><strong>Location:</strong> Nakulabye, Kampala, Uganda</p>
+
+<h3>Send Us a Message</h3>
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h2>Gallery</h2>
+<div class="row">
+  <div class="col-md-4 mb-3">
+    <img src="{% static 'core/images/hair1.jpg' %}" class="img-fluid rounded" alt="Hair Style 1">
+  </div>
+  <div class="col-md-4 mb-3">
+    <img src="{% static 'core/images/nails1.jpg' %}" class="img-fluid rounded" alt="Nail Art 1">
+  </div>
+  <div class="col-md-4 mb-3">
+    <img src="{% static 'core/images/makeup1.jpg' %}" class="img-fluid rounded" alt="Makeup 1">
+  </div>
+</div>
+{% endblock %}
